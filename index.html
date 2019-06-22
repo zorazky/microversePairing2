@@ -29,35 +29,49 @@
     </main>
 
     <form id="survey-form">
+
       <div>
         <label for="name"  id="name-label"> *Name: </label>
         <input type="text" name="" placeholder="Enter your name.." required="required" class="input" id="name">
-      </div>
+      </div> <br>
+      
       <div>
         <label for="email"  id="email-label"> *Email: </label>
         <input type="email" name="" id="email" placeholder="email@domain.com" required="required" pattern="[@]" class="input"> 
-      </div>
+      </div> <br>
+
       <div>
         <label for="number"  id="number-label"> *Age: </label>
         <input type="number" id="number" name="" placeholder="1" pattern="[0-9]" min="18" max="60" class="input"> 
-      </div>
+      </div> <br>
 
-      <select id="dropdown">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
+      <div>
+        <select id="dropdown">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+      
+      </div> <br>
+     
+      <div>
+          <input type="radio" name="gender" value="male"> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other<br>
+      </div> <br>
+      
 
-      <input type="radio" name="gender" value="male"> Male<br>
-      <input type="radio" name="gender" value="female"> Female<br>
-      <input type="radio" name="gender" value="other"> Other<br>
+      <div>
+          <input type="checkbox" name="vehicle1" value="Bike">I have a bike
+          <br>
+          <input type="checkbox" name="vehicle2" value="Bike">I have a bus
+      </div> <br> 
 
+      <textarea id="textarea" rows="5" cols="30">Leave additional comment...</textarea> <br><br>
 
-      <input type="checkbox" name="vehicle1" value="Bike">I have a bike
-      <br>
-      <input type="checkbox" name="vehicle2" value="Bike">I have a bus
-      <br>
+			<button id="submit"> Submit</button>
+      
      
       
     </form>
