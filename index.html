@@ -29,8 +29,20 @@
     </main>
 
     <form id="survey-form">
-      <input id="name" type="text">
-      <input id="email" type="text">
+      <div>
+        <label for="name"  id="name-label"> *Name: </label>
+        <input type="text" name="" placeholder="Enter your name.." required="required" class="input" id="name">
+      </div>
+      <div>
+        <label for="email"  id="email-label"> *Email: </label>
+        <input type="email" name="" id="email" placeholder="email@domain.com" required="required" pattern="[@]" class="input"> 
+      </div>
+      <div>
+        <label for="number"  id="number-label"> *Age: </label>
+        <input type="number" id="number" name="" placeholder="1" pattern="[0-9]" min="18" max="60" class="input"> 
+      </div>
+     
+      
     </form>
   
   </body>
